@@ -1,0 +1,74 @@
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+
+body {
+  background: image_url('qbkls.png');
+}
+.clear {
+  clear:both;
+}
+
+.para {
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+}
+.titlewords {
+  text-align:center;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.bender {
+  text-align:center;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.benderwords {
+  text-align:center;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 25px;
+}
+
+.circle {
+    font-weight: bold;
+    font-style: italic;
+    position: relative;
+    border-radius: 100%;
+    background: gray;
+    border: 1px solid #F7F7F7;
+    width: 80px;
+    height: 80px;
+    margin: 10px 10px;
+    text-align: center;
+    color: black;
+    font-size: 10px;
+    line-height: 16px;
+    cursor: pointer;
+    transform: rotate(11deg);
+    -ms-transform: rotate(11deg); /* IE 9 */
+    -webkit-transform: rotate(11deg); /* Opera, Chrome, and Safari */
+}
+
+.slogan{
+  padding-top:26px;
+  font-family: 'Bebas Neue', cursive;
+}
+.slogan a{
+  color:black;
+}
+
+.link {
+  padding-top: 26px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+
+.link a{
+  color:black;
+  font-size:25px;
+}
+
+header {
+  border-top: 9px solid black;
+}

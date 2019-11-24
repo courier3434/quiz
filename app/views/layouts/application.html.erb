@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Quiz</title>
+    <title>Quiz Page</title>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    <header class="row">
+      <div class="col-3">
+      
+      </div>
+      </div>
+      <div class="col-4 slogan">
+      <%= link_to 'Least Favorite Page on the Internet', root_path, class: 'navbar-brand' %>
+      </div>
+      <div class="col-5 link">
+        <%= link_to 'Benders Top Ten Words', new_quiz_path, class: 'navbar-brand' %>
+      </div>
+    </header>
+
+    <br class="clear" />
     <%= yield %>
+    
+<%= image_tag("bender.png", :alt => "rss feed") %>
+
+
   </body>
-</html>
+
+
+</html> 
+
