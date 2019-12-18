@@ -1,0 +1,6 @@
+<h1 class="bender"> Enter Episode Title and Airdate </h1>
+<%= simple_form_for @episode do |f| %>
+  <%= f.input :episode %>
+  <%= f.input :airdate %>
+  <%= f.submit 'Submit', class: "btn btn-primary"%>
+<% end %>

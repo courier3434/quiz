@@ -13,14 +13,19 @@
       </div>
       </div>
       <div class="col-4 slogan">
-      <%= link_to 'Least Favorite Page on the Internet', root_path, class: 'navbar-brand' %>
+      <%= link_to 'Bender\'s Worst Fanpage', root_path, class: 'navbar-brand' %>
       </div>
       <div class="col-5 link">
-        <%= link_to 'Benders Top Ten Words', new_quiz_path, class: 'navbar-brand' %>
+        <%= link_to 'Episodes of Futurama', episodes_path, class: 'navbar-brand' %>
       </div>
     </header>
 
     <br class="clear" />
+     <% if flash[:error].present? %>
+    <div class="col-10 offset-1 alert alert-danger">
+      <%= flash[:error].html_safe %>
+    </div>
+  <% end %>
     <%= yield %>
     
 <%= image_tag("bender.png", :alt => "rss feed") %>
