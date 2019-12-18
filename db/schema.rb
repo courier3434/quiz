@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2019_12_18_151117) do
   enable_extension "plpgsql"
 
   create_table "episodes", force: :cascade do |t|
-    t.string "episode"
+    t.string "episode_name"
     t.string "airdate"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -8,16 +8,13 @@ class EpisodesController < ApplicationController
   end
 
   def create
-    @episode = Episode.create(episode_params)
-    if @episode.invalid?
-      flash[:error] = 'Could Not Save. Invalid Data.'
-    end
-    redirect_to episodes_path
+   Episode.create(episode_params)
+  redirect_to episodes_path
   end
 
   private
 
   def episode_params
-    params.require(:episode).permit(:airdate)
+    params.require(:episode).permit(:airdate, :episode_name)
   end
 end
